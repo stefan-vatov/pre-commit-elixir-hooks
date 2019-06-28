@@ -1,8 +1,14 @@
 ---
-
 - id: elixir-format
   name: Run elixir format
-  description: "Runs elixir format in a Docker image against the current folder."
+  description: "Runs elixir formatter."
   language: system
   entry: mix format
-  files: '^(.*).(ex|exs)$'
+  files: "^(.*).(ex|exs)$"
+
+- id: elixir-credo
+  name: Run credo
+  description: "Runs static code analysis tool for the Elixir language ."
+  language: system
+  entry: mix credo
+  files: "^(.*).(ex|exs)$"
