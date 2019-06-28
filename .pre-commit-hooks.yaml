@@ -10,5 +10,5 @@
   name: Run credo
   description: "Runs static code analysis tool for the Elixir language ."
   language: system
-  entry: mix credo
+  entry: mix credo --strict
   files: "^(.*).(ex|exs)$"
