@@ -5,3 +5,4 @@
   description: "Runs elixir format in a Docker image against the current folder."
   language: system
   entry: mix format
+  files: '^(.*).(ex|exs)$'
